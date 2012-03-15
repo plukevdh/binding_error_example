@@ -17,7 +17,7 @@ $(function() {
   });
 
   crunch.pubsub.subscribe('all', function(msg) {
-    console.log("MAIN", arguments);
+    console.log("MAIN", msg);
   });
 
 });
