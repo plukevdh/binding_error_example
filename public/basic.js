@@ -9,7 +9,10 @@ crunch.pubsub.unsubscribe = crunch.pubsub.unbind;
 
 $(function() {
   $('.replace-it').click(function() {
-    $('iframe')[0].contentWindow.location.reload();
+    var iframe = $('iframe').first();
+
+    // reloads the iframe content
+    iframe.attr('src', iframe.attr('src'));
   });
 
   $('.send-it').click(function() {
